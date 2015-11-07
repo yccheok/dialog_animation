@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffffff"
+    android:id="@+id/view_animator"
+    android:animateFirstView="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- Not sure why. I need to place screen_main on the top, in order for it to work -->
+    <LinearLayout
+        android:id="@+id/screen_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:scrollbars="none"
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true" >
+            <LinearLayout
+                android:id="@+id/scroll_view_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </LinearLayout>
+
+</ViewAnimator>
